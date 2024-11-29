@@ -1,0 +1,35 @@
+# API Testing with RestAssured and TestNG
+
+## Project Overview
+This project demonstrates API testing using **RestAssured** and **TestNG**. The tests are written to validate various endpoints provided by the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/), which serves as a public mock API for testing and prototyping.
+
+The project includes:
+- Testing different HTTP methods: GET, POST, PUT.
+- Validation of response status codes, response time, and response body structure.
+- Tests for both successful and edge case scenarios.
+
+## Features
+- **GET Tests**: Validates retrieval of posts and ensures response structure is correct.
+- **POST Tests**: Ensures new resources can be created and their data is accurately returned.
+- **PUT Tests**: Tests updating existing resources.
+- **Performance Tests**: Verifies that responses meet acceptable performance thresholds.
+- **Edge Cases**: Handles scenarios like querying non-existent users.
+
+## Project Setup
+
+### Prerequisites
+- **Java Development Kit (JDK)**: Ensure JDK 8 or higher is installed.
+- **Maven**: Ensure Maven is installed and properly configured on your system.
+- **IDE**: You can use any Java IDE such as IntelliJ IDEA or Eclipse.
+
+### Dependencies
+The project uses the following dependencies, which are included in the `pom.xml` file:
+- **TestNG**: For test framework.
+- **RestAssured**: For API testing.
+- **JSONPath**: For parsing and validating JSON responses (integrated into RestAssured).
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd <repository_folder>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-28T19:59:08 EST" name="Surefire suite" finished-at="2024-11-28T19:59:12 EST" duration-ms="4573">
+    <groups>
+    </groups>
+    <test started-at="2024-11-28T19:59:08 EST" name="Surefire test" finished-at="2024-11-28T19:59:12 EST" duration-ms="4573">
+      <class name="ApiTest">
+        <test-method signature="testAllPosts()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:08 EST" name="testAllPosts" finished-at="2024-11-28T19:59:11 EST" duration-ms="3127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllPosts -->
+        <test-method signature="testCreatePost()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:11 EST" name="testCreatePost" finished-at="2024-11-28T19:59:11 EST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreatePost -->
+        <test-method signature="testCreatePostWithValidData()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:11 EST" name="testCreatePostWithValidData" finished-at="2024-11-28T19:59:11 EST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreatePostWithValidData -->
+        <test-method signature="testGetAllPosts()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:11 EST" name="testGetAllPosts" finished-at="2024-11-28T19:59:11 EST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllPosts -->
+        <test-method signature="testGetPostsForNonExistentUser()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:11 EST" name="testGetPostsForNonExistentUser" finished-at="2024-11-28T19:59:12 EST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPostsForNonExistentUser -->
+        <test-method signature="testGetRequest()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:12 EST" name="testGetRequest" finished-at="2024-11-28T19:59:12 EST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetRequest -->
+        <test-method signature="testGetRequestStatusAndResponseTime()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:12 EST" name="testGetRequestStatusAndResponseTime" finished-at="2024-11-28T19:59:12 EST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetRequestStatusAndResponseTime -->
+        <test-method signature="testJsonResponseStructure()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:12 EST" name="testJsonResponseStructure" finished-at="2024-11-28T19:59:12 EST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJsonResponseStructure -->
+        <test-method signature="testPostRequest()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:12 EST" name="testPostRequest" finished-at="2024-11-28T19:59:12 EST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostRequest -->
+        <test-method signature="testUpdatePost()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:12 EST" name="testUpdatePost" finished-at="2024-11-28T19:59:12 EST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePost -->
+        <test-method signature="testUpdatePostWithValidData()[pri:0, instance:ApiTest@27c6e487]" started-at="2024-11-28T19:59:12 EST" name="testUpdatePostWithValidData" finished-at="2024-11-28T19:59:12 EST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePostWithValidData -->
+      </class> <!-- ApiTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
