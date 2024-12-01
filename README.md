@@ -101,10 +101,6 @@ If you wish to contribute:
 1. Fork the repository.
 2. Create a new branch for your changes.
 3. Submit a pull request with detailed documentation of your updates.
-   
-**License**
-
-This project is licensed under the MIT License. Refer to the LICENSE file for more information.
 
 **Repository Link**
 
