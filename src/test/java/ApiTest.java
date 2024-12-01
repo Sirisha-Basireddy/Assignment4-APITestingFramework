@@ -5,19 +5,40 @@ import org.testng.annotations.Test;
 
 public class ApiTest {
 
-    @Test
-    public void testGetRequest() {
-        // Sending a GET request to a public API (JSONPlaceholder)
-        Response response = RestAssured.get("https://jsonplaceholder.typicode.com/posts/1");
+	@Test
+	public void testGetRequest() {
+	    // Sending a GET request to JSONPlaceholder API
+	    Response response = RestAssured.get("https://jsonplaceholder.typicode.com/posts/1");
 
-        // Temporary solution: Just verifying the status code for now
-        Assert.assertEquals(response.getStatusCode(), 200);
+	    // Assert status code 200 (OK)
+	    Assert.assertEquals(response.getStatusCode(), 200);
+
+	    // Assert response body is not null
+	    Assert.assertNotNull(response.getBody());
+
+	    // Check if the response contains expected fields
+	    Assert.assertTrue(response.getBody().asString().contains("userId"));
+	    Assert.assertTrue(response.getBody().asString().contains("title"));
+	    Assert.assertTrue(response.getBody().asString().contains("body"));
+	
+
         
-        // Assert that the response body is not null
-        Assert.assertNotNull(response.getBody());
+        /*
+         * This test is a temporary solution to verify the status code of a GET request.
+         * In the future, we can enhance this test to:
+         * 1. Validate the response body for specific fields and values.
+         * 2. Handle different response scenarios (e.g., non-200 status codes, timeouts).
+         * 3. Implement data-driven testing for multiple endpoints and different parameters.
+         */
+
+        /*
+         * Plan to reduce tech-debt:
+         * 1. Add assertions to validate the response body (e.g., check fields like userId, title).
+         * 2. Handle different response scenarios (e.g., 404, 500 status codes).
+         * 3. Implement data-driven testing for multiple endpoints and different request scenarios.
+         */
+
         
-        // Assert that the response body contains a specific field
-        Assert.assertTrue(response.getBody().asString().contains("userId"));
     }
     
     @Test
@@ -31,6 +52,13 @@ public class ApiTest {
         Assert.assertTrue(response.getBody().jsonPath().getList("$").size() > 0);
     }
     
+    /*
+     * Technical Documentation:
+     * The following code section has performance issues under heavy load.
+     * No immediate refactoring planned, but documented for future reference.
+     */
+
+    
     @Test
     public void testPostRequest() {
         // Known issue: This endpoint occasionally fails under heavy load.
@@ -42,6 +70,16 @@ public class ApiTest {
         // Assert that the status code is 201 (Created)
         Assert.assertEquals(response.getStatusCode(), 201);
     }
+    
+    /*
+     * Technical Debt:
+     * The POST request test is a basic implementation and lacks proper error handling.
+     * Future improvements should include:
+     * 1. Detailed response validation (e.g., checking actual values of userId, title, body).
+     * 2. Error handling for various status codes (e.g., 404, 500).
+     * 3. Data-driven testing for multiple request bodies.
+     */
+    
     public void problematicMethod() {
         // Known issue: This method has high cyclomatic complexity.
         // Documenting for future refactoring

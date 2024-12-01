@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Assignment</groupId>
+  <artifactId>Assignment4</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+	    <!-- TestNG for Unit Testing -->
+	    <dependency>
+	        <groupId>org.testng</groupId>
+	        <artifactId>testng</artifactId>
+	        <version>7.4.0</version>
+	        <scope>test</scope>
+	    </dependency>
+	    
+	    <!-- RestAssured for API testing -->
+	    <dependency>
+	        <groupId>io.rest-assured</groupId>
+	        <artifactId>rest-assured</artifactId>
+	        <version>4.4.0</version>
+	    </dependency>
+	
+	    <!-- JsonPath for parsing JSON responses -->
+	    <dependency>
+	        <groupId>io.rest-assured</groupId>
+	        <artifactId>json-path</artifactId>
+	        <version>4.4.0</version>
+	    </dependency>
+	</dependencies>
+</project>
