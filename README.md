@@ -36,7 +36,7 @@ Maven automatically handles dependency installation.
 1. Clone the Repository: Use the following command to clone the repository to your local machine:
 bash
 Copy code
-git clone https://github.com/Sirisha-Basireddy/API-Testing-Framework.git
+git clone https://github.com/Sirisha-Basireddy/Assignment4-APITestingFramework
 cd API-Testing-Framework
 2. Open in IDE:
 Open the project in your preferred IDE.
@@ -106,3 +106,4 @@ If you wish to contribute:
 
 Access the project repository on GitHub: API Testing Framework.
 
+https://github.com/Sirisha-Basireddy/Assignment4-APITestingFramework
