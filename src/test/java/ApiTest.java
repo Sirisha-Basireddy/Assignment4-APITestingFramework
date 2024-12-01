@@ -20,9 +20,7 @@ public class ApiTest {
 	    Assert.assertTrue(response.getBody().asString().contains("userId"));
 	    Assert.assertTrue(response.getBody().asString().contains("title"));
 	    Assert.assertTrue(response.getBody().asString().contains("body"));
-	
-
-        
+ 
         /*
          * This test is a temporary solution to verify the status code of a GET request.
          * In the future, we can enhance this test to:
@@ -37,7 +35,6 @@ public class ApiTest {
          * 2. Handle different response scenarios (e.g., 404, 500 status codes).
          * 3. Implement data-driven testing for multiple endpoints and different request scenarios.
          */
-
         
     }
     
